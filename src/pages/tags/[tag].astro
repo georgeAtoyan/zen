@@ -195,13 +195,13 @@ function formatDate(dateString) {
 <body>
   <Header />
   <main>
-    <a href="/tags/" class="back-link">← Back to tags</a>
+    <a href={`${import.meta.env.BASE_URL}/tags/`} class="back-link">← Back to tags</a>
     <h1 class="page-title">#{tag}</h1>
     <p class="page-subtitle">{posts.length} posts</p>
     <ul class="post-list">
       {posts.map((post) => (
         <li class="post-item" key={post.id}>
-          <a href={`/blog/${post.id}/`} class="post-link">
+          <a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`} class="post-link">
             <span class="post-date">{formatDate(post.data.pubDate)}</span>
             <h3 class="post-title">{post.data.title}</h3>
             {post.data.tags && post.data.tags.length > 0 && (

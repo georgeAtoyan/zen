@@ -4,9 +4,11 @@ import sitemap from '@astrojs/sitemap';
 import expressiveCode from 'astro-expressive-code';
 import { defineConfig, fontProviders } from 'astro/config';
 import rehypeWrapTables from './src/plugins/rehype-wrap-tables';
+import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers';
 
 export default defineConfig({
-	site: 'https://simple.com',
+	site: 'https://secd0g.github.io',
+	base: '/zen',
 	vite: {},
 	integrations: [
 		expressiveCode({
@@ -16,21 +18,18 @@ export default defineConfig({
 				showLineNumbers: true,
 				frame: 'terminal',
 			},
+			plugins : [pluginLineNumbers()],
 			styleOverrides: {
-				codeFontSize: '0.875rem',
-				codeFontFamily: "'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
-				codeLineHeight: '1.7142857em',
-				borderRadius: '0.5rem',
-				frameBorderWidth: '1px',
-				frameShadow: '0 2px 12px rgba(0, 0, 0, 0.1)',
-				containerPaddingBlock: '0.75rem',
-				containerPaddingInline: '1rem',
-				lineNumberMarginInline: '1rem',
-				lineNumberWidth: '2rem',
+    			codeFontSize: '0.875rem',
+    			codeFontFamily: "'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+    			codeLineHeight: '1.7142857em',
+    			borderRadius: '0.5rem',
+    			borderWidth: '1px',
+    			codePaddingBlock: '0.75rem',
+    			codePaddingInline: '1rem',
 			},
 			frames: {
-				showCopyButton: true,
-				showLanguageBadge: true,
+				showCopyToClipboardButton: true,
 			},
 			useDarkModeMediaQuery: false,
 			themeCssSelector: (theme) => {

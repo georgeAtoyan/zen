@@ -83,7 +83,10 @@ const isDark = 'dark';
 		if (pagefindModule || pagefindLoading) return;
 		pagefindLoading = true;
 		try {
-			const pagefindUrl = new URL('/pagefind/pagefind.js', window.location.origin).href;
+			const pagefindUrl = new URL(
+				`${import.meta.env.BASE_URL}/pagefind/pagefind.js`,
+				window.location.origin
+			).href;
 			const module = await import(/* @vite-ignore */ pagefindUrl);
 			pagefindModule = module.default || module;
 		} catch {

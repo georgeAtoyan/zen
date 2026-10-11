@@ -20,7 +20,7 @@ const formatDate = (date: Date) => {
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
@@ -242,7 +242,7 @@ const formatDate = (date: Date) => {
 				<div class="avatar-wrapper">
 					<img
 						class="intro-avatar"
-						src="/avatar.svg"
+						src={`${import.meta.env.BASE_URL}/avatar.svg`}
 						alt="Avatar"
 					/>
 				</div>
@@ -256,12 +256,12 @@ const formatDate = (date: Date) => {
 			<section class="posts-section">
 				<div class="section-header">
 					<h2 class="section-title">Latest Posts</h2>
-					<a href="/blog" class="section-link">View All →</a>
+					<a href={`${import.meta.env.BASE_URL}/blog`} class="section-link">View All →</a>
 				</div>
 				<ul class="post-list">
 					{recentPosts.map((post) => (
 						<li class="post-item">
-							<a href={`/blog/${post.id}/`} class="post-link">
+							<a href={`${import.meta.env.BASE_URL}/blog/${post.id}/`} class="post-link">
 								<span class="post-date">{formatDate(post.data.pubDate)}</span>
 								<h3 class="post-title">{post.data.title}</h3>
 							</a>
