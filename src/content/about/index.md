@@ -1,23 +1,25 @@
 ---
-name: Bob
-title: Full Stack Developer / Technical Writer
+name: George Atoyan
+title: System Administrator / DevOps
 ---
 
 ## About Me
 
-Passionate about technology, focusing on Web development and security research. Sharing technical insights, study notes, and project experiences here.
+I'm an aspiring Systems Administrator interested in building, managing, and maintaining reliable IT infrastructure. My focus spans Linux and Windows system administration, networking, cloud technologies, and automation.
 
-## Technical Skills
+I document practical engineering projects, infrastructure implementations, technical experiments, and troubleshooting solutions. My goal is to explore how systems work, understand the technologies behind them, and apply that knowledge to practical scenarios.
 
-- JavaScript / TypeScript
-- React / Vue
-- Node.js
-- Python
-- Web Security
+## Areas of Focus
+
+- Linux Administration — System configuration, services, users, permissions, storage, and security.
+- Windows Administration — Windows Server, Active Directory, Group Policy, and infrastructure management.
+- Networking — TCP/IP, DNS, DHCP, routing, firewalls, and network troubleshooting.
+- Python & Automation — Scripting, API development, and infrastructure automation.
+- Cloud & DevOps — Cloud infrastructure, virtualization, containers, CI/CD, and monitoring.
+- Cybersecurity — System hardening, access control, security practices, and infrastructure protection.
 
 ## Contact
 
 Feel free to reach out to me via:
-- Email: contact@example.com
-- GitHub: github.com/example
-- Twitter: @example
+- Email: atoyangeorge@gmail.com
+- GitHub: github.com/georgeAtoyan
